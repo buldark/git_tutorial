@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+
+/*hidden css*/
+hr{
+	display :none;	/*없는 것처럼 바짝 붙어서 */
+	/* visiblility: hidden; 안보이지만 공간은 차지 */
+}
+.blind, legned{
+	display : block;
+	overflow:hidden;
+	position: absolute;
+	left : 0;
+	top : -1000em;
+}
+
+.skip a{
+	 display: block;
+	 overflow:hidden;
+	 position: absolute;
+	 left : 0;
+	 top : -1000em;
+	 z-index : 9999;
+	 width : 100%;
+	 background-color: navy;
+	 color: white;
+	 font: bold 1.3em Tahoma,sans-serif;
+	 text-decoration : none;
+	 text-align: center; 
+}
+
+.skip a:hover, .skip a:active , .skip a:focus{
+	top:0;
+	padding:0.5em 0;
+	
+}

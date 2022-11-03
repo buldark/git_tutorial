@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style  type ="text/css">
+h3,li{
+	color : brown;
+}
+div>div>strong{/*자손 셀렉터 div밑의 div 밑의 strong '학습내용'' */
+	background:yellow;
+}
+ul strong{/*후손 셀렉터 CSS */
+	color :  dodgerblue;
+} 
+.warining{ /*클래스 워닝속성*/
+	color :red;
+}
+
+body.main{/*바디 태그의 main 클래ㅑ스 속성*/
+	background : aliceblue;
+}
+
+#list{
+
+	background:mistyrose;}
+#list span{
+	color : forestgreen;}
+h3:first-letter{/*가상클래스 -첫번쨰 글짜*/
+color :red;
+font-size:25px;
+	
+}	
+li:hover{ /*가상클래스*/
+	background : yellowgreen;
+}
+::selection {/*가상클래스 마우스로 드래그 하면 글자는 빨강 바탕색은 노랑 */
+	color :red;
+	background :yellow;
+	
+}
+
+</style>
+</head>
+<body class ="main">
+<h3>Web Programming</h3>
+<hr>
+<div>
+	<div>2학기 <strong>학습내용</strong>입니다</div>
+	<ul id="list">
+		<li><span>HTML5</span></li>
+		<li><strong>CSS</strong></li>
+		<li>JAVASCRIPT</li>
+	</ul>
+	<div class="warning">60점 이하는 F</div>
+</div>
+</body>
+</html>

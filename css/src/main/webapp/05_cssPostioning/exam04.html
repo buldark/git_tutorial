@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+*{/*  * = 모든항목 */
+ 	margin :0;
+ 	padding : 0; /* 초기화 */
+}
+body{
+	font : 20px Tahoma , san-serif;
+}
+li{
+	list-style :none; /* li의 점들이 다 사라짐 나중에 li 추가하더라도!!  */
+}
+#wrap {
+
+	width : 800px;
+	background-color: silver;
+	margin : 0 auto; /* 마진의 여백이 0 그리고 오토로 가운데 맞추라는 뜻 */
+}
+#header{
+background-color: red;
+}
+#container{
+background-color: cyan;
+}
+#container:after{/* 컨테이너가 끝난이후 지정  - bottom 부분이 위로 올라오는 부분 없이 아래에만 있게 하기 위해서  */
+ content : "";
+ display: block;
+ clear: both;
+}
+.nav{
+	float: left;
+ background-color: lime;
+ width :180px;
+}
+
+.content{
+float:right;
+background-color: lime;
+width:600px
+}
+
+#footer{
+	background-color: green;
+	margin-top: 30px;
+}
+</style>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<h1>LOGO</h1>
+		<p>This website is....</p>
+	</div>
+	
+	<div id ="container">
+		<div class="nav">
+			<h2>Navigation</h2>
+			<ul>
+			<li><a href="#">menu 1</a></li>
+			<li><a href="#">menu 2</a></li>
+			<li><a href="#">menu 3</a></li>
+			</ul>
+	</div>
+	
+	<div class ="content">
+		<h2> Content Title</h2>
+		<p>ellentesque habitant morbi tristique senectus et netus    et malesuada fames 
+         ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
+         amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi 
+         vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper 
+         pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, 
+         wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, 
+         sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. 
+         Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
+         eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt 
+         quis, accumsan porttitor, facilisis luctus, metus</p>
+	</div>
+	</div>	
+	<div id = "footer">
+		<address>Seoul, Korea</address>
+	</div>
+	
+</div>
+</body>
+</html>
