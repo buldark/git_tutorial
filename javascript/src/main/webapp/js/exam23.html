@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>window 객체</h1>
+<h3>open 메소드 확인</h3>
+
+<div>
+
+	<a href ="#" onclick="open1(); return false;">새창 열기</a> <!-- 여기서 onclick이 실행 된 다음에 href=""로 이동함  벗 뒤에 리턴 펄스가 붙으면 주소로 이동X-->
+	<a href = "#" onclick ="open2(); return false;">팝업창 열기 1 </a>
+	<a href = "#" onclick="open3('https://www.naver.com'); return false;"> 팝업 창 열기 (2-1)</a>
+	<a href = "#" onclick="open3('https://www.daum.net'); return false;">핍압 칭 얄기 (2-2)</a>
+	<br>
+
+</div>
+
+<script type="text/javascript">
+function open1(){
+	//새로운 창이 열린다
+	window.open("open.html");
+}
+function open2(){
+	//클릭 할 때 마다 새로운 팝업창이 계속 뜬다.
+	window.open("open.html",
+			"",
+			"width=300,height=500,scrollbars=no,toolbar=no, menubar=no,location=no");
+}
+
+function open3(url){
+	//한번 생성된 팝업창 재사용
+	window.open(url,
+			"myWindow",
+			 "width=300, height=500, scrollbars=no, toolbar=no, menubar=no, status=no location=no")	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

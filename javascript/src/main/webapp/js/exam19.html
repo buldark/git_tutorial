@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#myid{
+	background: #ff0;
+	font-size: 20px;
+	font-weight: bold;
+	color: #00f;
+}
+</style>
+</head>
+<body>
+<h1 id ="myid">안녕하세요</h1>
+<h1 id ="myid">자바스크립트입니다</h1>
+<h1 id ="myid">강의 참 재미있죠?</h1>
+<a href="#" onclick="doPrint()">자바 스크립트 함수 호출 하기</a>
+
+<script type="text/javascript">
+function doPrint(){//가장 먼저 만나는 id 값ㅁ나 인식한다. 중복 id를 인식 못한다.
+	document.getElementById("myid").innerHTML="스크립가 실행되어었씁니다.";
+	
+}
+</script>
+</body>
+</html>
+<!-- id로 잡으면 딱 한군데만 바뀐다.... 다바꾸려면 클래스 속성으로 해야함  -->
