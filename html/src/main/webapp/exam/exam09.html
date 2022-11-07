@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<table border = "1" width ="300" cellpadding ="3" cellspacing="0"><!-- padding : 칸 안의  여백   /spacing : 칸들사이의 바깥여백  주로 0 그래야 한줄처럼 보임...-->
+	<!-- 제목영역 -->
+	<thead><!-- table head = thead -->
+		<tr>
+			<th width ="50" height="50">NO</th><!--<th>는   가운데 정렬 굵게 / 맨처음 설정 width 300중에 No가  50만 쓰고 나머지는 획득포인트가-->
+			<th>획득 포인트</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr align = "center"> <!-- tr은 행  td는 칸   tr에다하면  align은 전부다 가운데 정렬 td에 걸면 그 칸마다 다르게 align  = "left,center,right"-->
+			<td>2</td>
+			<td>루비 결제 5000g</td>
+		</tr>
+	
+		<tr align = "center">
+			<td>1</td>
+			<td>가입 축하 10000G 지급 </td>
+		</tr>
+	</tbody>	
+	<tfoot>
+		<tr>
+		<th width = "70" height= "30">합계</th> <!-- 합계부분에 70으로 늘렸더니 위도 다바뀜.... 위에 있는 숫자 width 50이 무시 만약 위에 50을 적어 놨으면 굳이 아래에다 똑같이 적을 필요 없음  -->
+		<th>15000</th>
+		</tr>	
+	</tfoot> <!--  tbody tfoot 대신 div를 더 많이 씀.... 벗 div는 \t이 안됨?? -->
+	
+</table>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action ="result.html">
+	<fieldset>
+		<legend>이름 입력하기</legend>
+		<div>
+			<label for ="user_name">이름</label>
+			<input type = "text" name="user_name" id = "user_name"/>
+		</div>
+		<br/>
+		
+		<div>
+			<input type ="submit" value = "입력완료"/>
+			<input type ="reset" value ="초기화"/>
+			<input type = "button" value = "입력완료" onclick="javascriptL:location.href='result.html'"/><!-- onclick = "" ""했을 때  -->
+			<input type="image" src="../img/ok.png"	 alt ="확인"/><!-- 이 경우 자동으로 submit함!   cf) 화면에 단순하게 띄우는것은 <img src="">-->
+			<input type="image" src="../img/ok.png"	 alt ="확인" onclick ="return false";/><!--onclick ="return false" 뜻 ㅅsubmit기능 막아라!!!!   -->
+			</div>
+	</fieldset>
+</form>
+</body>
+</html>
+
+<!--  submit하면  ~ form 태그 안에 있는 입력상자의 데이터를 들고  페이지를 (action이라는 페이지로 )이동한다 
+
+button ~ on click  : 이거는 이동만 한다 데이터를 들고 가고그런건 없음.....
+
+<form> <input type = "submit" > </form> 해야지
+
+<form></form>
+<input type = "submit" > 이럼 안올라감
+
+<img
+<input type = "image' 
+
+<input type="button"
+<button  : 이럼 submit기능이 들어감  submit 하시 싫으면 return false 사용 
+
+
+
+
+
+-->

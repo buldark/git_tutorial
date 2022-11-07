@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+	<fieldset>
+		<legend> 이동통신사 선택하기</legend>
+		<div>
+			<!-- 드롭다운(싱글타입)  멀티플이 없으면 콤보박스형식-->
+			<label for = "telecom">이동통신사 선택</label>
+			<select name = "telecom" id = "telecom">
+				<option>----선택하세요---------</option>
+				<option value ="skt">SKTelecom</option>
+				<option value ="kt">KT</option>
+				<option value = "U+">LG U+</option>
+		
+			</select>
+		</div>
+	</fieldset>
+	<br/>
+	
+	<fieldset>
+		
+		<legend>스마트폰 운영체제 선택하기</legend>
+		<div>
+		<!-- 드롭다운(멀티방식)  multiple또는 size가 있으면 클릭하기전에 리스트가 주르륽 나옴!! ctrl+클릭 하면 따로따로 선택/shift +클릭 하면 연달아서!! -->
+		<label for = "smartphone">스마트폰 운영체제</label>
+		<select name ="smartphone" id ="smartphone" multiple size="5">
+			<option value="android" selected ="selected"><!--안드로이드 항목에 처음부터 selected로 선택되게   -->안드로이드</option>
+			<option value="ios">ios</option><!-- 화면에 보이는것은 option 사이 그런데 넘어가는 값은 option value ="" 여기서 괄호의 값 -->
+			<option value= "windows">Windows</option>
+		
+		</select>
+	
+		</div>
+	</fieldset>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="">
+	<fieldset>
+		<div>
+		<!-- 체크박스 -->
+		<input type="checkbox" name="hobby" id="hobby1" value="축구" checked="checked"/><!-- 서버측에서 받는 값 -->
+		<label for ="hobby1">축구</label> <!-- 화면에 보이는 값 label쪽이 축구가 보이는것임  -->
+		<input type= "checkbox" name ="hobby" id="hobby2" value="농구"/>
+		<label for="hobby2">농구</label>
+		<input type ="checkbox" name = "hobby" id="hobby3" value="야구"/>
+		<label for ="hobby3">야구</label>
+		
+		</div>
+
+	</fieldset>
+	<br/>
+	
+	<fieldset>
+	<legend> 성별 선택하기</legend>
+		<!-- 라디오 버튼 -->
+		<div>
+		<input type="radio" name="gender" id="gender_m" value="M" checked/>
+		<label for ="gender_m">남자</label>
+		<input type="radio" name="gender" id ="gender_f" value="F"/>
+		<label for="gender_f">여자</label>
+		</div>
+	</fieldset>
+</form>
+</body>
+</html>
+
+<!--  radio 박스와 체크박스  -->

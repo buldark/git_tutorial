@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<table border = "1" width ="300" cellpadding ="5" cellspacing="0">
+<!-- 제목영역 -->
+	<thead><!-- table head = thead -->
+		<tr>
+			
+			<th colspan ="2">획득 포인트</th><!-- colspan ="n" :  n칸을  가로로...행으로 병합하겠다 -->
+		</tr>
+	</thead>
+	<tbody>
+		<tr align ="center"> 
+			<td rowspan="2" valign ="bottom">G획득</td> <!-- rowspan="n " n칸을  세로로 (열로) 병합 --> <!-- valign  = "top ,middle(center :default),bottom -->
+			<td>루비 결제 5000g</td>
+		</tr>
+	
+		<tr align = "center">
+			
+			<td>가입 축하 10000G 지급 </td>
+		</tr>
+	</tbody>	
+	<tfoot>
+		<tr>
+		<th width = "70" height= "30">합계</th> <!-- 합계부분에 70으로 늘렸더니 위도 다바뀜.... 위에 있는 숫자 width 50이 무시 만약 위에 50을 적어 놨으면 굳이 아래에다 똑같이 적을 필요 없음  -->
+		<th>15000</th>
+		</tr>	
+	</tfoot> <!--  tbody tfoot 대신 div를 더 많이 씀.... 벗 div는 \t이 안됨?? -->
+
+
+</table>
+</body>
+</html>
