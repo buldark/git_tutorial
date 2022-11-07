@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="boardSQL">
+	<insert id="boardWrite" parameterType="java.util.Map">
+		insert into board(seq, id, name, email, subject, content, ref) 
+		values(seq_board.NEXTVAL
+			 , #{id}
+			 , #{name}
+			 , #{email}
+			 , #{subject}
+			 , #{content}
+			 , seq_board.NEXTVAL)
+	</insert>
+	
+	<select id="boardList" parameterType="java.util.Map" resultType="board">
+		<!-- 
+		select * from
+		(select rownum rn, tt.* from
+		(select * from board order by seq desc)tt
+		)where rn between #{startNum} and #{endNum}
+		
+		select * from
+		(select rownum rn, tt.* from
+		(select * from board order by seq desc)tt
+		)where rn >= #{startNum} and rn &lt;= #{endNum}
+		 -->
+		 
+		<![CDATA[
+		select * from
+		(select rownum rn, tt.* from
+		(select * from board order by seq desc)tt
+		)where rn >= #{startNum} and rn <= #{endNum}
+		]]>
+		
+	</select>
+	
+	<select id="getTotalA" resultType="int">
+		select count(*) from board
+	</select>
+	
+	<select id="getBoard" parameterType="int" resultType="board">
+		select * from board where seq=#{seq}
+	</select>
+	
+	<update id="setHit" parameterType="int">
+		update board set hit=hit+1 where seq=#{seq}
+	</update>
+	
+	<delete id ="boardDelete" parameterType="int">
+		delete board where seq=#{seq}
+	</delete>
+	
+	<update id="boardUpdate" parameterType="java.util.Map">
+		update board set subject=#{subject}
+						,content=#{content}
+						,logtime=sysdate
+						 where seq=#{seq}
+	</update>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
