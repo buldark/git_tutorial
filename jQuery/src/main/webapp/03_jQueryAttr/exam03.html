@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>change 이벤트 확인하기</h1>
+<form name = "fomr1" id ="join">
+	<fieldset>
+		<legend>취미</legend>
+		<p>
+			<input type ="checkbox"  id ="all_check" value="Y"/>
+			<label for="all_check">전체선택/해제</label>
+		</p>
+	
+		<p>
+			<input type ="checkbox"  id ="hobby1"  class= "hobby_check"value="축구"/>
+			<label for="hobby1">축구</label>
+			<input type ="checkbox"  id ="hobby2"  class= "hobby_check"value="농구"/>
+			<label for="hobby2">농구</label>
+			<input type ="checkbox"  id ="hobby3"  class= "hobby_check"value="야구"/>
+			<label for="hobby3">야구</label>
+		
+		</p>
+	</fieldset>
+</form>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#all_check').change(function(){
+		var is_check = $(this).is(':checked');//true 또는 false 값
+		console.log(is_check);
+	
+		$('.hobby_check').prop('checked',is_check);//attr이 아닌 prop가 더 적당함??
+	
+	});
+	
+	
+});
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

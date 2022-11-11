@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>속성제어</h1>
+<p>클릭하세여</p>
+<img src="../img/1.png" width="500" height="500"/>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	var index=1;
+	
+	$('img').click(function(){
+		index=(index% 4)+1 ////1~4순서대로 나온다.
+		$(this).attr('src', '../img/'+index+'.png');
+		
+	});
+});
+</script>
+</body>
+</html>
