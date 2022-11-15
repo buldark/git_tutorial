@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div{
+	width : 400px;
+	height: 300px;
+	padding-top : 20px;
+	background-size: 100% 100%;
+}
+ul{
+	padding: 10px 20px;
+	background-color: rgba(255,255,2555,0.6)
+}
+</style>
+</head>
+<body>
+<div>
+	<ul>
+		<li class="item">
+			<a href="#">../img/1.png</a>
+		</li>
+		<li class="item">
+			<a href="#">../img/2.png</a>
+		</li>
+		<li class="item">
+			<a href="#">../img/3.png</a>
+		</li>	
+	</ul>
+</div>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.item > a').click(function(){
+		var index =	$(this).parent().index(); //사용자가 클릭한 li의 인덱스 구하기
+		console.log('index ='+index);
+		
+		  var image = ['../img/1.png','../img/2.png','../img/3.png'];
+
+		
+		   $(this).parents('div').css({//조상중에 div 찾아가기 복수부모표기 -나를 기준으로 그래서 옆의 li들은 아님... 자기 바로 위의 li+~~~//json배열
+		         'background-image': 'url(' + image[index] + ')'
+
+		});//<a>태그의 조상들 중 <div>태스 
+	});
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
