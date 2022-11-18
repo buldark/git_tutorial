@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comment>
+	<result>true</result>
+	<messsage></messsage>
+	<total_count>24</total_count>
+	<item>
+		<num>1</num>
+		<writer>홍길동</writer>
+		<content>아무글씨 content content content</content>
+		<datetime><![CDATA[2021-03-15 12:21:42]]></datetime>
+		
+	</item>
+	<item>
+		<num>2</num>
+		<writer>라인</writer>
+		<content>아무글씨 content content content</content>
+		<datetime> <![CDATA[2022-03-15 02:21:42]]> </datetime>
+		
+	</item>
+	<item>
+		<num>3</num>
+		<writer>프로도</writer>
+		<content>아무글씨 content content content</content>
+		<datetime><![CDATA[2022-04-15 11:21:12]]></datetime>
+	</item>
+</comment>
+
+<!-- 
+CDATA Section xml서 
+- <![CDATA[.....]]> 
+- CDATA Section 영역 안에서는 특수문자의 사용이 자유롭다.
+- 한글을 포함한 문자열 데이터에 사용할 수 있다.
+ -->
